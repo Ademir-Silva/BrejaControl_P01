@@ -5,7 +5,7 @@ html{
 }
 
 body{
-    background-color: rgb(22, 22, 22);
+    background-color: #231f20;
 }
 
 input, button{
@@ -16,4 +16,12 @@ button{
     cursor: pointer;
 }
 
+a{
+    color: rgba(248, 248, 248, 0.733);
+    text-decoration: none;
+}
 
+a:hover{
+    color: rgb(226, 147, 28);
+    transition: .5s;
+}
