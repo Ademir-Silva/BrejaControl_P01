@@ -1,7 +1,8 @@
 /* ====== MENU HORIZONTAL ====== */
 
 .navbar{
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(59, 59, 59);
+    box-shadow: 0 5px 10px rgba(17, 17, 17, 0.568);
 
     position: fixed;
 }

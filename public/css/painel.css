@@ -1,5 +1,72 @@
 /* ====== CARDS ====== */
 
-/* #card{
-    display: grid;
-} */
+.container{
+    margin-top: 100px;
+}
+
+.row{
+    justify-content: center;
+}
+
+.card.card{
+    height: 15rem;
+    border: none;
+
+    background: rgb(54, 54, 54);
+    border-radius: 8px;
+    box-shadow: 10px 5px 5px rgb(26, 26, 26);
+
+    cursor: pointer;
+}
+
+.card.card:hover{
+    box-shadow: 10px 5px 5px rgba(17, 17, 17, 0.781);
+    transition: .8s;
+}
+
+.card-content{
+    height: 100%;
+}
+
+.card-body{
+    height: 100%;
+}
+
+.d-flex{
+    height: 100%;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icon{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    color: aliceblue;
+}
+
+.material-icons.md-48{
+    font-size: 58px;
+
+    color: rgb(221, 248, 70);
+}
+
+
+/* ====== FOOTER ====== */
+
+footer{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 9.3rem;
+}
+
+.links{
+    margin: 0px 10px;
+
+    font-size: 13pt;
+}
