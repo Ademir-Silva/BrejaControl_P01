@@ -6,29 +6,33 @@
 
 @section('title', 'BrejaControl | Login')
 
-<div class="box">
+@section('section-grid')
 
-    <img src="images/Logo 1.png" alt="logo BrejaControl">
+    <div class="box">
 
-    <form action="{{ url('/painel') }}" method="post">
-    @csrf
-        <h1>Login</h1>
-        
-        <div class="input">
-            {{-- <label for="">Email</label> --}}
-            <input type="email" name="email" placeholder="E-mail" id="">
-        </div>
+        <img src="images/Logo.png" alt="logo BrejaControl">
 
-        <div class="input">
-            {{-- <label for="">Senha</label> --}}
-            <input type="password" name="password" placeholder="Senha" id="">
-        </div>
+        <form action="{{ url('LoginController') }}" method="post">
+        @csrf
+            <h1>Login</h1>
 
-        <div class="links">
-            <a href="{{ url('/register') }}">Cadastrar-me</a>
-            <a href="#">Esqueci a senha</a>
-        </div>
-        
-        <button type="submit">Login</button>
-    </form>
-</div>
+            <div class="input">
+                {{-- <label for="">Email</label> --}}
+                <input type="email" name="email" placeholder="E-mail" id="">
+            </div>
+
+            <div class="input">
+                {{-- <label for="">Senha</label> --}}
+                <input type="password" name="password" placeholder="Senha" id="">
+            </div>
+
+            <div class="links">
+                <a href="{{ url('/registro') }}">Cadastrar-me</a>
+                <a href="#">Esqueci a senha</a>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+@endsection

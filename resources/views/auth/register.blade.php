@@ -6,34 +6,38 @@
 
 @section('title', 'BrejaControl | Cadastre-se')
 
-<div class="box">
+@section('section-grid')
 
-    <img src="images/Logo 1.png" alt="logo BrejaControl">
+    <div class="box">
 
-    <form action="{{ url('/') }}" method="post">
-    @csrf
-        <h1>Cadastro</h1>
-        
-        <div class="input">
-            {{-- <label for="">Nome</label> --}}
-            <input type="password" name="password" placeholder="Nome" id="">
-        </div>
+        <img src="images/Logo.png" alt="logo BrejaControl">
 
-        <div class="input">
-            {{-- <label for="">Email</label> --}}
-            <input type="email" name="email" placeholder="E-mail" id="">
-        </div>
+        <form action="{{ url('') }}" method="post">
+        @csrf
+            <h1>Cadastro</h1>
 
-        <div class="input">
-            {{-- <label for="">Senha</label> --}}
-            <input type="password" name="password" placeholder="Senha" id="">
-        </div>
-        
-        <div class="links">
-            <p>Já tem uma conta?<a href="{{ url('/') }}"> <b>Logar</b></a></p>
-        </div>
+            <div class="input">
+                {{-- <label for="">Nome</label> --}}
+                <input type="password" name="password" placeholder="Nome" id="">
+            </div>
 
-        <button type="submit">Cadastrar</button>
-    </form>
-    
-</div>
+            <div class="input">
+                {{-- <label for="">Email</label> --}}
+                <input type="email" name="email" placeholder="E-mail" id="">
+            </div>
+
+            <div class="input">
+                {{-- <label for="">Senha</label> --}}
+                <input type="password" name="password" placeholder="Senha" id="">
+            </div>
+
+            <div class="links">
+                <p>Já tem uma conta?<a href="{{ url('/login') }}"> <b>Logar</b></a></p>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+    </div>
+
+@endsection

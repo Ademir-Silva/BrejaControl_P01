@@ -5,6 +5,8 @@
 }
 
 .row{
+    min-height: 600px;
+
     justify-content: center;
 }
 
@@ -55,14 +57,13 @@ h3{
     color: rgb(221, 248, 70);
 }
 
-
 /* ====== FOOTER ====== */
 
 footer{
     display: flex;
     justify-content: center;
 
-    margin-top: 9.3rem;
+    margin: 10px;
 }
 
 .links{
